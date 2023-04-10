@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import matplotlib.pyplot as plt
 
 # hyperparameters
 batch_size = 16 # how many independent sequences will we process in parallel?
@@ -116,3 +115,5 @@ class Transformer(nn.Module):
             idx_next = torch.multinomial(probs, num_samples=1)
             idx = torch.cat([idx, idx_next], dim=-1)
         return idx
+
+print(torch. __version__ )
