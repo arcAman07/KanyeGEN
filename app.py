@@ -19,7 +19,7 @@ dropout = 0.0
 vocab = 101
 # ------------
 
-with open('/Users/deepaksharma/Documents/Python/Kaggle/GenerateKanyeLyrics/Kanye West Lyrics.txt','r',encoding='utf-8') as f:
+with open('./Kanye West Lyrics.txt','r',encoding='utf-8') as f:
     text = f.read()
 
 chars = sorted(list(set(text)))
